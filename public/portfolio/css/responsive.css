@@ -1,0 +1,60 @@
+/* Mobile-first: base styles are mobile; enhance upward */
+@media (max-width:1079px){
+  .hamburger{display:inline-grid}
+  .nav-links{position:fixed;top:70px;left:0;right:0;flex-direction:column;padding:16px 4%;background:rgba(8,11,20,.97);border-bottom:1px solid var(--border);transform:translateY(-120%);opacity:0;visibility:hidden;transition:.35s;max-height:calc(100vh - 70px);overflow-y:auto}
+  .nav.open .nav-links{transform:none;opacity:1;visibility:visible}
+  .nav-links a{padding:14px 10px;font-size:1rem}
+  .nav-links a::after{left:10px;right:auto;width:30px}
+}
+@media (max-width:520px){
+  .nav-actions .resume-btn .lbl{display:none}
+  .nav-actions .icon-btn.social{display:none}
+  section{padding:56px 0}
+  .hero-visual{min-height:380px}
+  .code-snip{display:none}
+  .card{padding:22px}
+}
+@media (min-width:640px){
+  .g2{grid-template-columns:repeat(2,1fr)}
+  .g3{grid-template-columns:repeat(2,1fr)}
+  .g4{grid-template-columns:repeat(2,1fr)}
+  .foot-grid{grid-template-columns:repeat(2,1fr)}
+}
+@media (min-width:900px){
+  .g3{grid-template-columns:repeat(3,1fr)}
+  .g4{grid-template-columns:repeat(4,1fr)}
+  .hero-grid{grid-template-columns:1.1fr 1fr}
+  .about-grid{grid-template-columns:360px 1fr}
+  .feature-project{grid-template-columns:1fr 1.2fr}
+  .contact-grid{grid-template-columns:1fr 1.4fr}
+  .foot-grid{grid-template-columns:1.5fr 1fr 1fr 1fr}
+}
+
+
+@media (max-width: 639px){
+  .hero{padding:42px 0 58px}
+  .hero-grid{gap:26px}
+  .hero-visual{min-height:465px;margin-top:8px}
+  .hero-photo{width:132px;right:5%;top:-4px;padding:6px;border-radius:16px}
+  .hero-photo span{font-size:.58rem}
+  .terminal{margin-top:130px;max-width:100%;transform:none}
+  .term-body{padding:16px;font-size:.78rem;min-height:210px}
+  .float-sym{font-size:1rem}
+  .photo{width:190px;height:190px}
+  .profile-card{padding:24px}
+  .project-gallery{grid-template-columns:1fr}
+  .detail-nav{justify-content:flex-start}
+  .detail-nav a{font-size:.74rem}
+  .form{padding:22px}
+}
+@media (min-width: 640px){
+  .project-gallery{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media (min-width: 900px){
+  .hero-visual{min-height:540px}
+  .hero-photo{right:8%;width:182px}
+  .terminal{margin-top:150px}
+}
+@media (prefers-reduced-motion: reduce){
+  .hero-photo{transform:none;animation:none}
+}

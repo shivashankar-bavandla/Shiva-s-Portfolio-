@@ -1,0 +1,1 @@
+Academic PDF supplied by the portfolio owner. It includes the provisional certificate and consolidated memo.
